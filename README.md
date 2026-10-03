@@ -14,6 +14,9 @@ Import this repository with the Root Directory left at the repository root. The 
 
 ## What is inside
 
+- 275 scored multiple-choice practice questions across all 37 chapters: select a chapter, choose an answer, read the explanation, and retry mistakes. Each question gives 1 practice point for a correct answer and 0 otherwise; there is no negative marking.
+- Saved quiz attempts, year filtering, subject-wide search, and a chapter/selection score. Answers lock after a choice; resetting or retrying starts a fresh attempt. Scores reflect the current attempt, not official board marks or a predicted rank.
+- A catalogue of all **156 PDF files** found in the nine official main-exam Physics/Chemistry/Biology archives for **2024, 2025 and 2026**, including special versions and duplicate scan/text versions. These are file counts, not 156 distinct paper codes. Every entry names its exact PDF and links to the official archive.
 - 133 independently written worked selections across all 37 current PCB chapters.
 - 69 groups of related PYQs, with specific year, set and question references.
 - Subject/chapter navigation, search, year filters, collapsible answers, revision flags and printing.
@@ -22,7 +25,9 @@ Import this repository with the Root Directory left at the repository root. The 
 
 ## Scope and limits
 
-The source pool contains one representative paper per subject for **2016–2020 and 2022–2026**: 30 source papers across ten exam years. **2022 covers Term II only.** The cancelled 2021 annual exam is not counted. The 2019 papers are third-party reproductions; other source links point to CBSE archives. The selected 2016 Physics/Chemistry sets carry `/C` in their codes.
+**The all-set question conversion is not complete.** Listing a PDF does not mean all its questions have been converted or checked. The catalogue displays how many selections from each paper are quiz-ready, including zero. No unchecked OCR questions are enabled for scoring. The quiz contains independently worded concept checks and paraphrased questions; many written PYQs have been adapted into MCQs with new options. These do not replace derivations, diagrams, case studies or timed written papers.
+
+The original worked-answer source pool contains one representative paper per subject for **2016–2020 and 2022–2026**: 30 source papers across ten exam years. The quiz additionally draws on multiple 2024–2026 sets. **2022 covers Term II only.** The cancelled 2021 annual exam is not counted. The 2019 papers are third-party reproductions; other source links point to CBSE archives. The selected 2016 Physics/Chemistry sets carry `/C` in their codes.
 
 This is a **curated selection**, not all questions, all regional sets, a complete solutions book or a statistical prediction. Some entries deliberately select one branch or subpart. Questions are paraphrased. Related groups demonstrate recurring concepts/methods; the displayed number of years refers to listed examples, not an exhaustive recurrence frequency.
 
@@ -36,7 +41,7 @@ Progress is stored only in the browser’s local storage. It is not synced to Gi
 - `dist/`: editable static HTML, CSS, JavaScript and study data.
 - `scripts/build_offline.py`: rebuilds the single-file version using standard Python.
 
-Run `python scripts/build_offline.py` after editing `dist/`.
+Quiz source: `scripts/quiz_*.py`; public source catalogue: `scripts/paper-catalogue.json`. To rebuild and validate, run `python scripts/build_quiz.py`, then `python scripts/build_offline.py` and `python scripts/check_quiz.py`. The original question papers are linked, not bundled.
 
 ## Sources
 
