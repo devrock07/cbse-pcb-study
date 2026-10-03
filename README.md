@@ -6,7 +6,11 @@ A free, offline-friendly CBSE Class 12 Physics, Chemistry and Biology study webp
 
 Download **[PCB-Boardroom.html](PCB-Boardroom.html)** using GitHub’s download button, then open the downloaded file in Chrome, Edge or another browser. No installation, account or local server is needed. The webpage itself works offline; original-paper links need internet access.
 
-The repository is public. **GitHub Pages and other website hosting are not enabled.**
+The repository is public. The downloaded HTML also works without hosting.
+
+## Deploy on Vercel
+
+Import this repository with the Root Directory left at the repository root. The included `vercel.json` selects the static-site preset, skips installation/build commands, and serves `dist/`, where `index.html` and its assets live. A connected GitHub project redeploys when changes are pushed; otherwise redeploy the latest commit from the Vercel dashboard.
 
 ## What is inside
 
