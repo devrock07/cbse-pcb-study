@@ -1,0 +1,6 @@
+research/
+.openai/
+node_modules/
+*.log
+qa/
+__pycache__/
